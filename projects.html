@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Bilisha Ghimire</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="page-loader"><div class="loader-ring"></div><div class="loader-text">LOADING…</div></div>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Bilisha <span>.Ghimire</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <button class="theme-toggle" title="Switch to dark">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="section page-top">
+  <div class="container">
+    <div class="text-center mx-auto reveal" style="max-width:600px;">
+      <div class="section-label justify-content-center">My Work</div>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle mx-auto">A selection of things I've designed, built and shipped — from solo experiments to client-facing products.</p>
+    </div>
+
+    <div class="filter-bar justify-content-center mt-5">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="ui">UI</button>
+      <button class="filter-btn" data-filter="app">App</button>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6 project-card-wrap reveal" data-category="web">
+        <div class="project-card">
+          <div class="project-card-img"><span class="proj-icon"><i class="fa-solid fa-cart-shopping"></i></span></div>
+          <div class="project-card-body">
+            <h4>NeoCart E-Commerce</h4>
+            <p>A full shopping experience with product filters, cart logic, wishlist, and a smooth multi-step checkout flow. Includes order confirmation emails and admin order management.</p>
+            <div class="project-tech-list">
+              <span class="badge-tech">HTML</span><span class="badge-tech">CSS</span><span class="badge-tech">JS</span><span class="badge-tech">Bootstrap</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="#" class="btn-proj btn-proj-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn-proj btn-proj-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 project-card-wrap reveal delay-1" data-category="web app">
+        <div class="project-card">
+          <div class="project-card-img"><span class="proj-icon"><i class="fa-solid fa-chart-line"></i></span></div>
+          <div class="project-card-body">
+            <h4>Pulse Analytics</h4>
+            <p>Realtime dashboard visualizing product metrics, retention and engagement trends. Supports custom date ranges, CSV export, and team-level access control.</p>
+            <div class="project-tech-list">
+              <span class="badge-tech">JS</span><span class="badge-tech">Chart.js</span><span class="badge-tech">API</span><span class="badge-tech">Node.js</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="#" class="btn-proj btn-proj-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn-proj btn-proj-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 project-card-wrap reveal delay-2" data-category="app">
+        <div class="project-card">
+          <div class="project-card-img"><span class="proj-icon"><i class="fa-solid fa-comments"></i></span></div>
+          <div class="project-card-body">
+            <h4>ChatSphere</h4>
+            <p>A sleek real-time messaging interface with multi-user rooms, emoji reactions, and theme switching. Messages persist across sessions and support file attachments.</p>
+            <div class="project-tech-list">
+              <span class="badge-tech">JS</span><span class="badge-tech">WebSocket</span><span class="badge-tech">CSS</span><span class="badge-tech">Express</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="#" class="btn-proj btn-proj-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn-proj btn-proj-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 project-card-wrap reveal" data-category="ui">
+        <div class="project-card">
+          <div class="project-card-img"><span class="proj-icon"><i class="fa-solid fa-palette"></i></span></div>
+          <div class="project-card-body">
+            <h4>Auralis UI Kit</h4>
+            <p>A component library and design system with 40+ reusable, themeable UI elements. Built for fast prototyping with full Figma-to-code compatibility.</p>
+            <div class="project-tech-list">
+              <span class="badge-tech">CSS</span><span class="badge-tech">Figma</span><span class="badge-tech">JS</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="#" class="btn-proj btn-proj-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn-proj btn-proj-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 project-card-wrap reveal delay-1" data-category="web ui">
+        <div class="project-card">
+          <div class="project-card-img"><span class="proj-icon"><i class="fa-solid fa-newspaper"></i></span></div>
+          <div class="project-card-body">
+            <h4>Lumen Blog Platform</h4>
+            <p>A minimalist publishing platform with markdown support, reading-time estimates, and dark mode. Authors can manage drafts, schedule posts, and track reader engagement.</p>
+            <div class="project-tech-list">
+              <span class="badge-tech">HTML</span><span class="badge-tech">CSS</span><span class="badge-tech">JS</span><span class="badge-tech">MongoDB</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="#" class="btn-proj btn-proj-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn-proj btn-proj-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 project-card-wrap reveal delay-2" data-category="app">
+        <div class="project-card">
+          <div class="project-card-img"><span class="proj-icon"><i class="fa-solid fa-dumbbell"></i></span></div>
+          <div class="project-card-body">
+            <h4>FitTrack App</h4>
+            <p>A workout and habit tracker with progress charts, streak tracking, and custom goal setting. Users can log workouts, set weekly targets, and visualize monthly progress.</p>
+            <div class="project-tech-list">
+              <span class="badge-tech">JS</span><span class="badge-tech">LocalStorage</span><span class="badge-tech">Bootstrap</span><span class="badge-tech">Chart.js</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="#" class="btn-proj btn-proj-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn-proj btn-proj-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 project-card-wrap reveal" data-category="web">
+        <div class="project-card">
+          <div class="project-card-img"><span class="proj-icon"><i class="fa-solid fa-briefcase"></i></span></div>
+          <div class="project-card-body">
+            <h4>HireBoard Job Portal</h4>
+            <p>A job listing platform where companies can post vacancies and applicants can filter by role, location, and salary. Features resume upload and one-click apply.</p>
+            <div class="project-tech-list">
+              <span class="badge-tech">React</span><span class="badge-tech">Node.js</span><span class="badge-tech">MongoDB</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="#" class="btn-proj btn-proj-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn-proj btn-proj-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 project-card-wrap reveal delay-1" data-category="ui">
+        <div class="project-card">
+          <div class="project-card-img"><span class="proj-icon"><i class="fa-solid fa-utensils"></i></span></div>
+          <div class="project-card-body">
+            <h4>Savor Restaurant App</h4>
+            <p>A restaurant landing page and online ordering UI with menu browsing, table reservation, and customer review sections. Fully responsive and accessible.</p>
+            <div class="project-tech-list">
+              <span class="badge-tech">HTML</span><span class="badge-tech">CSS</span><span class="badge-tech">JS</span><span class="badge-tech">Figma</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="#" class="btn-proj btn-proj-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn-proj btn-proj-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 project-card-wrap reveal delay-2" data-category="app">
+        <div class="project-card">
+          <div class="project-card-img"><span class="proj-icon"><i class="fa-solid fa-note-sticky"></i></span></div>
+          <div class="project-card-body">
+            <h4>NoteNest</h4>
+            <p>A Notion-inspired note-taking app with rich text editing, folder organization, and tag-based search. Notes sync in real time and work offline with service workers.</p>
+            <div class="project-tech-list">
+              <span class="badge-tech">React</span><span class="badge-tech">IndexedDB</span><span class="badge-tech">PWA</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="#" class="btn-proj btn-proj-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="btn-proj btn-proj-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OPEN SOURCE -->
+<section class="section" style="background: var(--surface);">
+  <div class="container">
+    <div class="text-center mx-auto reveal" style="max-width:600px;">
+      <div class="section-label justify-content-center">Open Source</div>
+      <h2 class="section-title">Contributions</h2>
+      <p class="section-subtitle mx-auto">Some of the open-source projects I've contributed to or maintained.</p>
+    </div>
+    <div class="row g-4 mt-4">
+      <div class="col-lg-4 reveal delay-1">
+        <div class="featured-card h-100">
+          <div class="featured-card-icon"><i class="fa-brands fa-github"></i></div>
+          <h5>react-scroll-reveal</h5>
+          <p>Contributed intersection observer-based reveal animations. Added TypeScript types and improved performance for large DOM trees.</p>
+          <span class="badge-tech">TypeScript</span>&nbsp;<span class="badge-tech">React</span>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal delay-2">
+        <div class="featured-card h-100">
+          <div class="featured-card-icon"><i class="fa-brands fa-github"></i></div>
+          <h5>awesome-nepali-devs</h5>
+          <p>Curated and maintained a list of Nepali developers building in public. Helped grow the community resource to 200+ contributors.</p>
+          <span class="badge-tech">Markdown</span>&nbsp;<span class="badge-tech">Community</span>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal delay-3">
+        <div class="featured-card h-100">
+          <div class="featured-card-icon"><i class="fa-brands fa-github"></i></div>
+          <h5>bootstrap-custom-themes</h5>
+          <p>Published a collection of Bootstrap 5 custom themes as npm packages. Used by 500+ developers across GitHub.</p>
+          <span class="badge-tech">SCSS</span>&nbsp;<span class="badge-tech">Bootstrap</span>&nbsp;<span class="badge-tech">npm</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="footer-text">© 2026 <span>Bilisha Ghimire</span>. Built with HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

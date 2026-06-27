@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilisha Ghimire — Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.hero-photo-ring {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 0 60px rgba(99,102,241,0.35);
+}
+.hero-photo-ring img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 4px solid var(--bg);
+}
+/* If no photo, show avatar icon */
+.hero-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--surface2), var(--surface));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: var(--primary);
+  border: 4px solid var(--bg);
+}
+@media (max-width: 767px) {
+  .hero-photo-ring { width: 220px; height: 220px; }
+}
+</style>
+</head>
+<body>
+
+<div id="page-loader"><div class="loader-ring"></div><div class="loader-text">LOADING…</div></div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Bilisha <span>.Ghimire</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <button class="theme-toggle" title="Switch to dark">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="hero-blob hero-blob-3"></div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 hero-content">
+        <div class="hero-eyebrow reveal"><span class="hero-eyebrow-dot"></span>Available for freelance work</div>
+        <h1 class="hero-name reveal delay-1">Hi, I'm <span class="highlight">Bilisha Ghimire</span></h1>
+        <h2 class="hero-role reveal delay-2">I'm a <span class="typed-text"></span><span class="cursor"></span></h2>
+        <p class="hero-desc reveal delay-3">I design and build fast, accessible, and beautifully crafted web experiences — from idea to deployment. Based in Kathmandu, focused on modern JavaScript and clean UI systems.</p>
+        <div class="hero-cta reveal delay-4">
+          <a href="projects.html" class="btn-primary-custom"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+          <a href="contact.html" class="btn-secondary-custom"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
+        </div>
+        <div class="hero-stats reveal delay-5">
+          <div><div class="hero-stat-num" data-count="40">0</div><div class="hero-stat-label">Projects Done</div></div>
+          <div><div class="hero-stat-num" data-count="5">0</div><div class="hero-stat-label">Years Exp.</div></div>
+          <div><div class="hero-stat-num" data-count="25">0</div><div class="hero-stat-label">Happy Clients</div></div>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center reveal-right">
+        <div class="hero-image-wrap" style="position:relative;display:inline-block;">
+          <div class="hero-photo-ring">
+            <!-- Replace myImage.jpeg with your actual photo -->
+            <img src="bilisha.jpeg" alt="Bilisha Ghimire" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="hero-photo-placeholder" style="display:none;"><i class="fa-solid fa-user-astronaut"></i></div>
+          </div>
+          <div class="hero-float-badge hero-float-badge-1"><span class="badge-icon">⚡</span> Fast Delivery</div>
+          <div class="hero-float-badge hero-float-badge-2"><span class="badge-icon">🎯</span> Pixel Perfect</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I DO -->
+<section class="section" style="background: var(--surface);">
+  <div class="container">
+    <div class="text-center mx-auto reveal" style="max-width:600px;">
+      <div class="section-label justify-content-center">What I Do</div>
+      <h2 class="section-title">Services I Offer</h2>
+      <p class="section-subtitle mx-auto">From design to deployment, I cover the full spectrum of modern web development.</p>
+    </div>
+    <div class="row g-4 mt-4">
+      <div class="col-lg-3 col-md-6 reveal delay-1">
+        <div class="featured-card h-100 text-center">
+          <div class="featured-card-icon"><i class="fa-solid fa-paint-roller"></i></div>
+          <h5>UI/UX Design</h5>
+          <p>Creating intuitive, visually appealing interfaces that users actually enjoy using. I translate ideas into clean design systems.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 reveal delay-2">
+        <div class="featured-card h-100 text-center">
+          <div class="featured-card-icon"><i class="fa-solid fa-code"></i></div>
+          <h5>Frontend Development</h5>
+          <p>Building responsive, accessible, and performant frontends with modern HTML, CSS, JavaScript and React.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 reveal delay-3">
+        <div class="featured-card h-100 text-center">
+          <div class="featured-card-icon"><i class="fa-solid fa-server"></i></div>
+          <h5>Backend Development</h5>
+          <p>Developing robust APIs and server-side logic with Node.js, Express, and MongoDB to power your applications.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 reveal delay-4">
+        <div class="featured-card h-100 text-center">
+          <div class="featured-card-icon"><i class="fa-solid fa-rocket"></i></div>
+          <h5>Deployment &amp; DevOps</h5>
+          <p>Setting up CI/CD pipelines, Dockerizing apps, and deploying to cloud platforms for a smooth production experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section class="section">
+  <div class="container">
+    <div class="text-center mx-auto reveal" style="max-width:600px;">
+      <div class="section-label justify-content-center">Selected Work</div>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle mx-auto">A quick look at a few things I've recently built.</p>
+    </div>
+    <div class="featured-grid mt-5">
+      <div class="featured-card reveal delay-1">
+        <div class="featured-card-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+        <h4>NeoCart E-Commerce</h4>
+        <p>A full shopping experience with product filters, cart logic, wishlist, and a smooth multi-step checkout flow. Includes order confirmation and admin order management.</p>
+        <div style="margin-top:auto;padding-top:1rem;">
+          <span class="badge-tech">HTML</span> <span class="badge-tech">CSS</span> <span class="badge-tech">JS</span> <span class="badge-tech">Bootstrap</span>
+        </div>
+        <a href="projects.html" class="btn-secondary-custom" style="margin-top:1rem;">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="featured-card reveal delay-2">
+        <div class="featured-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h4>Pulse Analytics</h4>
+        <p>Realtime dashboard for tracking product metrics and user engagement. Features live chart updates, custom date ranges, and export to CSV using Chart.js and a REST API.</p>
+        <div style="margin-top:auto;padding-top:1rem;">
+          <span class="badge-tech">Chart.js</span> <span class="badge-tech">Node.js</span> <span class="badge-tech">REST API</span>
+        </div>
+        <a href="projects.html" class="btn-secondary-custom" style="margin-top:1rem;">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="featured-card reveal delay-3">
+        <div class="featured-card-icon"><i class="fa-solid fa-comments"></i></div>
+        <h4>ChatSphere</h4>
+        <p>A sleek real-time messaging app with rooms, reactions and themes. Supports multi-user chat rooms, emoji reactions, and persistent chat history via WebSockets.</p>
+        <div style="margin-top:auto;padding-top:1rem;">
+          <span class="badge-tech">WebSocket</span> <span class="badge-tech">Express</span> <span class="badge-tech">JS</span>
+        </div>
+        <a href="projects.html" class="btn-secondary-custom" style="margin-top:1rem;">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="text-center mt-5 reveal">
+      <a href="projects.html" class="btn-primary-custom"><i class="fa-solid fa-folder-open"></i> View All Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" style="background: var(--surface);">
+  <div class="container">
+    <div class="text-center mx-auto reveal" style="max-width:600px;">
+      <div class="section-label justify-content-center">Kind Words</div>
+      <h2 class="section-title">What Clients Say</h2>
+      <p class="section-subtitle mx-auto">Feedback from people I've had the pleasure of working with.</p>
+    </div>
+    <div class="row g-4 mt-4">
+      <div class="col-lg-4 reveal delay-1">
+        <div class="featured-card h-100">
+          <div style="font-size:1.5rem;color:var(--accent);margin-bottom:1rem;">❝</div>
+          <p style="font-style:italic; opacity:0.85;">Bilisha delivered our e-commerce platform ahead of schedule. The attention to detail and clean code made future updates a breeze. Highly recommend!</p>
+          <div style="margin-top:1.5rem; display:flex; align-items:center; gap:0.75rem;">
+            <div class="about-avatar" style="width:40px;height:40px;font-size:1rem;"><i class="fa-solid fa-user"></i></div>
+            <div><strong>Anil Sharma</strong><br><small style="opacity:0.6;">CEO, ShopNepal</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal delay-2">
+        <div class="featured-card h-100">
+          <div style="font-size:1.5rem;color:var(--accent);margin-bottom:1rem;">❝</div>
+          <p style="font-style:italic; opacity:0.85;">Our analytics dashboard went from idea to production in just 3 weeks. Bilisha is fast, communicative, and genuinely cares about the product's success.</p>
+          <div style="margin-top:1.5rem; display:flex; align-items:center; gap:0.75rem;">
+            <div class="about-avatar" style="width:40px;height:40px;font-size:1rem;"><i class="fa-solid fa-user"></i></div>
+            <div><strong>Priya Rana</strong><br><small style="opacity:0.6;">Product Manager, DataFlow</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal delay-3">
+        <div class="featured-card h-100">
+          <div style="font-size:1.5rem;color:var(--accent);margin-bottom:1rem;">❝</div>
+          <p style="font-style:italic; opacity:0.85;">Working with Bilisha felt like having an in-house developer. He understood our vision immediately and built something we're truly proud to show off.</p>
+          <div style="margin-top:1.5rem; display:flex; align-items:center; gap:0.75rem;">
+            <div class="about-avatar" style="width:40px;height:40px;font-size:1rem;"><i class="fa-solid fa-user"></i></div>
+            <div><strong>Suman Thapa</strong><br><small style="opacity:0.6;">Founder, CreativeHub</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="featured-card text-center reveal" style="max-width:700px; margin:0 auto; padding:3.5rem 2rem;">
+      <div class="featured-card-icon" style="margin:0 auto 1.5rem;"><i class="fa-solid fa-handshake"></i></div>
+      <h2 class="section-title mb-3">Let's Build Something Together</h2>
+      <p class="section-subtitle mb-4">Whether you need a full web app, a redesign, or just want to chat about a project idea — my inbox is always open.</p>
+      <a href="contact.html" class="btn-primary-custom"><i class="fa-regular fa-paper-plane"></i> Start a Conversation</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p class="footer-text">© 2026 <span>Bilisha Ghimire</span>. Built with HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
